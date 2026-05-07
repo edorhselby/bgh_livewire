@@ -127,7 +127,7 @@
 </div>
 <nav class="hidden md:flex items-center space-x-8 font-manrope text-sm tracking-widest">
 <a class="text-yellow-700 dark:text-yellow-500 border-b-2 border-yellow-700 dark:border-yellow-500 pb-1" href="#">Home</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 transition-colors duration-300" href="#">Services</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 transition-colors duration-300" href="/services">Services</a>
 <a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 transition-colors duration-300" href="#">Shop</a>
 <a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 transition-colors duration-300" href="#">Academy</a>
 </nav>
@@ -170,7 +170,7 @@
 </div>
 <div class="relative">
 <div class="aspect-[4/5] overflow-hidden rounded-lg shadow-2xl">
-<img class="w-full h-full object-cover" data-alt="Close up of a luxury makeup kit with gold accents and soft brushes on a cream marble surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw5k6CUTAQV-_I9hv3dE884snWo_GnKF7X35-qBPHae3twxq313Gq8Qb7LNRQtufANKj4QCD2PagVz0jh7I1uUbfeRLnz3jHBo7RcY_6C309iEjHhwKOBNAsaM8FY2-cejiTZpOCDNnIFGfaKUjjg8aq6wFbcYP9K1Q7imYwaDaW_HxtkhOtM54pmcb2y0e8hNS6YlSUNOK8dWOUV8QxRCkwbwEbGvMEtugmFSeU1oNE_VciMARonBC11hM2a3TCRMCGq2pGLVCAw"/>
+<img class="w-full h-full object-cover" data-alt="Close up of a luxury makeup kit with gold accents and soft brushes on a cream marble surface" src="frontpage.png"/>
 </div>
 <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-secondary-fixed opacity-30 -z-10 rounded-full blur-3xl"></div>
 </div>
