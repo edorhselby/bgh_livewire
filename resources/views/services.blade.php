@@ -223,7 +223,7 @@
 </div>
 </div>
 </section>
-<!-- 3. Bridal Packages - Asymmetric Editorial Layout -->
+<!-- 3. Bridal Packages - Asymmetric Editorial Layout 
 <section class="mb-stack-lg">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
 <div class="order-2 md:order-1">
@@ -259,7 +259,7 @@
 </div>
 </div>
 </section>
-<!-- 4. Home/Outdoor Services -->
+4. Home/Outdoor Services -->
 <section class="mb-stack-lg border border-primary/20 p-stack-lg rounded-3xl text-center relative overflow-hidden">
 <div class="absolute inset-0 opacity-5 pointer-events-none">
 <span class="material-symbols-outlined text-[300px]" data-icon="house">house</span>

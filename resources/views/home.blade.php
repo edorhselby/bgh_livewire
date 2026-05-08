@@ -192,7 +192,7 @@
 <span class="font-label-sm text-label-sm text-primary-container uppercase mb-2 block">Professional Artistry</span>
 <h4 class="text-headline-md font-manrope text-white mb-4">Bridal &amp; Glam Makeup</h4>
 <p class="text-white/80 font-body-md max-w-xs mb-4">Tailored looks that enhance your natural essence for your most precious moments.</p>
-<button class="text-white flex items-center gap-2 group-hover:gap-4 transition-all">Explore <span class="material-symbols-outlined">arrow_forward</span></button>
+<a href="/services"><button class="text-white flex items-center gap-2 group-hover:gap-4 transition-all">Explore <span class="material-symbols-outlined">arrow_forward</span></button></a>
 </div>
 </div>
 <!-- Card 2 -->
