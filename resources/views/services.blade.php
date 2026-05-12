@@ -5,7 +5,6 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
       tailwind.config = {
@@ -37,7 +36,7 @@
                     "primary-container": "#d4af37",
                     "tertiary-fixed-dim": "#cac99f",
                     "surface-bright": "#f9f9f9",
-                    "surface-tint": "#735c00",
+                    "surface-tint": "#73500",
                     "surface-container-high": "#e8e8e8",
                     "secondary": "#70585b",
                     "surface-container-lowest": "#ffffff",
@@ -109,13 +108,20 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(212, 175, 55, 0.1);
         }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 <style>
     body {
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head>
+</head>
 <body class="bg-background text-on-background font-body-md overflow-x-hidden">
 <!-- TopAppBar -->
 <header class="bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-yellow-200/30 dark:border-yellow-900/20 shadow-sm shadow-yellow-900/5">
@@ -124,7 +130,7 @@
 <button class="text-yellow-700 dark:text-yellow-500 hover:text-yellow-600 transition-colors duration-300 active:opacity-80">
 <span class="material-symbols-outlined" data-icon="menu">menu</span>
 </button>
-<h1 class="text-2xl font-light tracking-widest text-yellow-700 dark:text-yellow-500 uppercase font-manrope">Bee’s Glam Hub</h1>
+<h1 class="text-2xl font-light tracking-widest text-yellow-700 dark:text-yellow-500 uppercase font-manrope"><img alt="Bee's Glam Hub" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiJ-eg3Ask4iYljcLisLlmgAo1uCU6d1zxa_UCeEI0Y5QHHBeUVQ_aMuRdzmlhrplPxGSBGV1T16SKe0HKXNIYTdZN9ZSOSuvHTlU-i5hueESGzTKSmbQwyNAWEWQ36JgDQMXzTcxUQX_zZS5rODXhKkg0Gx36Hl2mVPeFWgAS21oNU51hZV7f2euDgPEsvOEY-5UaAbZCzKAwunrJ5KUAU8uVGwF6etcr83HxBGTXE_TADjZ42hpccdpR-_0H6qAwvzpQ9ZnPSJg"/></h1>
 </div>
 <nav class="hidden md:flex gap-8 font-manrope tracking-tight">
 <a class="text-stone-500 dark:text-stone-400 hover:text-yellow-600 transition-colors duration-300" href="#">Home</a>
@@ -156,12 +162,11 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
 <div class="md:col-span-8 relative overflow-hidden rounded-xl aspect-[16/9] group">
-<img alt="Bridal Makeup" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of elegant bridal makeup with soft shimmering gold eyeshadow and nude lips in warm ethereal lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7rHHpXrwJfP3H7Jmsjlnzy6CZsqzdnsmOtZrgEzw1CCoPNFnbq9Os9w0qWxgdn-9MNP3Ah-hDFYYvz5fTpHp66V9is3BgA--zlCZIh1Nw9rVrabHx2jNmYgkKtRuY4K2sAyNPOXD7yTIkEYJnFQM5nQBBUPuLpF9b138kfLRz3xCroQDALzJNk4M5zpLI5xBBMpoChg9ISIt1htZh5YxjXXXu9pLAs6EIjJBJq7y9tsJl2xb3p3fdDI6_nKhH8ETs2xWtb9xVIpM"/>
+<img alt="Soft Glam Portfolio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7rHHpXrwJfP3H7Jmsjlnzy6CZsqzdnsmOtZrgEzw1CCoPNFnbq9Os9w0qWxgdn-9MNP3Ah-hDFYYvz5fTpHp66V9is3BgA--zlCZIh1Nw9rVrabHx2jNmYgkKtRuY4K2sAyNPOXD7yTIkEYJnFQM5nQBBUPuLpF9b138kfLRz3xCroQDALzJNk4M5zpLI5xBBMpoChg9ISIt1htZh5YxjXXXu9pLAs6EIjJBJq7y9tsJl2xb3p3fdDI6_nKhH8ETs2xWtb9xVIpM"/>
 <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex flex-col justify-end p-8">
-<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-label-sm font-label-sm italic rounded-full self-start mb-4">Limited Availability</span>
-<h4 class="font-headline-md text-headline-md text-surface mb-2">The Bridal Ritual</h4>
-<p class="text-surface-variant max-w-md font-body-md mb-6">A high-definition, long-wear application tailored specifically for your special day, featuring premium skin prep and luxury lash application.</p>
-<button class="bg-primary-container text-on-primary-container px-8 py-3 font-label-sm uppercase tracking-widest rounded-full self-start hover:shadow-lg transition-all active:scale-95">Book Now</button>
+<h4 class="font-headline-md text-headline-md text-surface mb-2">Signature Glam</h4>
+<p class="text-surface-variant max-w-md font-body-md mb-6">Our renowned makeup application techniques that focus on longevity, skin texture, and enhancing your unique facial architecture.</p>
+<button class="bg-primary-container text-on-primary-container px-8 py-3 font-label-sm uppercase tracking-widest rounded-full self-start hover:shadow-lg transition-all active:scale-95">Explore Artistry</button>
 </div>
 </div>
 <div class="md:col-span-4 flex flex-col gap-gutter">
@@ -190,7 +195,7 @@
                 </h3>
 <span class="font-label-sm text-secondary uppercase tracking-[0.2em]">Luxury Crowns</span>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-4">
+<div class="grid grid-cols-1 gap-gutter px-4 md:grid-cols-2">
 <div class="flex flex-col gap-4">
 <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-sm">
 <img alt="Wig Installation" class="w-full h-full object-cover" data-alt="Sophisticated wig installation on a beautiful model with silky texture and natural hairline in a minimalist studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_f2Hasw7j-W9X7FU0bAzeHWrmlHSNd6imGYAY_OSnmzYM7Sm986gRvUmBnNEA5BDXO03gxxEViY4njxXfTosyJX6g42q8DrgxE-WQ69Ql65mrt_R4yYPZRN6MlQNeknzqi3T88yMh6JGPoyDzmehrCEtc4cUIWRlkRukNNF3Bp6wmiXkkeuujs_R3AundJJjS6sJ9Zs4nJIEW5BjjfbQlHH4MorXAU1ti5Z_BZvK-aI5QecGfIjZ4sccGFIpeEUmh9FNsDsSqCHE"/>
@@ -198,16 +203,6 @@
 <div class="py-4">
 <h4 class="font-headline-md text-headline-md text-on-surface">Wig Installation</h4>
 <p class="font-body-md text-on-surface-variant mt-2 mb-4">Meticulous frontal or closure installation with HD lace blending for a seamless, natural look.</p>
-<button class="text-primary font-label-sm uppercase tracking-widest flex items-center gap-2 hover:translate-x-1 transition-transform">Book Now <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
-</div>
-</div>
-<div class="flex flex-col gap-4">
-<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-sm">
-<img alt="Braiding" class="w-full h-full object-cover" data-alt="Close up of intricate braiding pattern on dark hair with gold accessories and soft backlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl2kMN4EWUm4CmF-etDJbG1ZdzTyw_95CuGGwO5xrfxhIvg4XWvv-BDDVKFcvO2Ho6Lj4fIAiewdQ3Osd00hRTzL0j16kUAqC5hAz_ri4AHAInxA-rwGy03myhI903Jlo9t1z7KHFfiNvazpLSKck4LZQlvyrU4GuNou51dn7LbNLqIglUma6W3VFte2H8wbpBQUF3KDx4smJOFsJ1xnzuc6S78otJ0niSexVy2Nua1tNm5lUAh2XG5bQ5qkpCHtqY7Mrl8GMZQfs"/>
-</div>
-<div class="py-4">
-<h4 class="font-headline-md text-headline-md text-on-surface">Luxury Braiding</h4>
-<p class="font-body-md text-on-surface-variant mt-2 mb-4">Precision knotless braids, cornrows, or custom artistic patterns designed to protect and beautify.</p>
 <button class="text-primary font-label-sm uppercase tracking-widest flex items-center gap-2 hover:translate-x-1 transition-transform">Book Now <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></button>
 </div>
 </div>
@@ -223,43 +218,292 @@
 </div>
 </div>
 </section>
-<!-- 3. Bridal Packages - Asymmetric Editorial Layout 
-<section class="mb-stack-lg">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
-<div class="order-2 md:order-1">
-<h3 class="font-headline-lg text-headline-lg text-primary mb-stack-sm flex items-center gap-3">
+<!-- 3. Bridal Suite - Horizontal Carousel -->
+<section class="mb-stack-lg relative overflow-hidden" id="bridal-suite">
+<div class="text-center mb-12">
+<div class="flex items-center justify-center gap-3 mb-2">
+<span class="h-px w-8 bg-primary/30"></span>
+<h3 class="font-headline-lg text-headline-lg text-primary flex items-center gap-3">
 <span class="material-symbols-outlined" data-icon="favorite">favorite</span> The Bridal Suite
-                    </h3>
-<p class="font-body-lg text-on-surface-variant mb-stack-md italic">A symphony of services for the most beautiful chapter of your life.</p>
-<div class="space-y-6">
-<div class="flex gap-4 p-4 rounded-lg bg-surface-container-low border-l-4 border-primary shadow-sm">
-<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
-<div>
-<h5 class="font-bold font-manrope text-on-surface">The Empress Combo</h5>
-<p class="text-sm text-on-surface-variant">Full Bridal Makeup + Hair Styling + Luxury Accessory Placement + Post-Ceremony Touch-up. <span class="text-primary font-bold ml-2">$599+</span></p>
+</h3>
+<span class="h-px w-8 bg-primary/30"></span>
+</div>
+<p class="font-body-lg text-on-surface-variant italic">A curated symphony of services for the most beautiful chapter of your life.</p>
+</div>
+<div class="relative group">
+<!-- Left Arrow -->
+<button class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-surface/80 backdrop-blur-sm p-2 rounded-full border border-primary/20 text-primary hidden md:flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all shadow-md ml-4 active:scale-95" onclick="document.getElementById('bridal-carousel').scrollBy({left: -400, behavior: 'smooth'})">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<!-- Carousel Container -->
+<div class="flex gap-8 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-8 px-4 md:px-12 scroll-smooth" id="bridal-carousel">
+<!-- Package Card 1 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-center bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 relative group overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-6xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">BGH Tulip Bride</h4>
+<p class="font-body-md text-on-surface-variant mb-6 italic">A timeless, luminous look designed for the bride who wants to glow from within.</p>
+<div class="flex-grow">
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Engagement makeup</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Wedding makeup &lpar; same day &rpar;</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free Consultation</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free trial session &lpar; can be used for the save the date shoot or bridal shower &rpar;</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/20 flex flex-col gap-4">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-secondary uppercase tracking-widest">Price</span>
+<span class="text-2xl font-headline-md text-primary">₵1800</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-3 font-label-sm uppercase tracking-[0.2em] rounded-sm hover:brightness-110 transition-all shadow-sm">Enquire Now</button>
 </div>
 </div>
-<div class="flex gap-4 p-4 rounded-lg bg-surface-container-low border-l-4 border-outline-variant shadow-sm">
-<span class="material-symbols-outlined text-primary" data-icon="group">group</span>
-<div>
-<h5 class="font-bold font-manrope text-on-surface">Maids &amp; Matrons</h5>
-<p class="text-sm text-on-surface-variant">Coordinated glam for the bridal party (min 3 people). Includes soft glam and elegant up-dos. <span class="text-primary font-bold ml-2">$150/person</span></p>
+<!-- Package Card 2 (Empress Combo) -->
+<div class="min-w-[320px] md:min-w-[400px] snap-center bg-secondary-container/10 border-2 border-primary/20 rounded-xl p-8 flex flex-col shadow-md relative overflow-hidden">
+<div class="absolute top-0 left-0 bg-primary text-on-primary text-[10px] font-label-sm px-4 py-1 uppercase tracking-widest">Most Coveted</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2 mt-4">BGH LILY BRIDE</h4>
+<p class="font-body-md text-on-surface-variant mb-6 italic">The ultimate luxury experience combining artistry and hair sculpting.</p>
+<div class="flex-grow">
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="auto_awesome">auto_awesome</span>
+<span>Engagement makeup</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="auto_awesome">auto_awesome</span>
+<span>White wedding makeup &lpar; different days &rpar;</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="auto_awesome">auto_awesome</span>
+<span>Free consultation</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="auto_awesome">auto_awesome</span>
+<span>Free trial session &lpar; can be used as save the date shoot or bridal shower &rpar;</span>
+</li>
+{{-- <li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="auto_awesome">auto_awesome</span>
+<span>Bridal Touch-up Survival Kit</span>
+</li> --}}
+</ul>
+</div>
+<div class="mt-auto pt-6 border-t border-primary/10 flex flex-col gap-4">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-secondary uppercase tracking-widest">PRICE</span>
+<span class="text-3xl font-headline-md text-primary">₵2800</span>
+</div>
+<button class="w-full bg-on-surface text-surface py-3 font-label-sm uppercase tracking-[0.2em] rounded-sm hover:bg-primary transition-all shadow-md">Book The Suite</button>
+</div>
+</div>
+<!-- Package Card 3 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-center bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 relative group overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-6xl" data-icon="group">group</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">BGH BOUJIE BRIDE</h4>
+<p class="font-body-md text-on-surface-variant mb-6 italic">A coordinated, sophisticated glam session for your favorite people.</p>
+<div class="flex-grow">
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Engagement makeup &amp; hairstyling &lpar; same day &rpar;</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>White weddiing makeup &amp; hairstyling </span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free construction of customized wig cap</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free Consultation</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free trial session &lpar; can be used as save the date shoot or bridal shower &rpar;</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/20 flex flex-col gap-4">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-secondary uppercase tracking-widest">Investment</span>
+<span class="text-2xl font-headline-md text-primary">₵3400<span class="text-xs text-on-surface-variant font-normal"></span></span>
+</div>
+<button class="w-full border border-primary text-primary py-3 font-label-sm uppercase tracking-[0.2em] rounded-sm hover:bg-primary-container hover:text-on-primary-container transition-all">Enquire Now</button>
+</div>
+</div>
+<!-- Package Card 4 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-center bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 relative group overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-6xl" data-icon="group">group</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">BGH HOLLY BRIDE</h4>
+<p class="font-body-md text-on-surface-variant mb-6 italic">A coordinated, sophisticated glam session for your favorite people.</p>
+<div class="flex-grow">
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Engagement makeup &amp; hairstyling &lpar; Different days &rpar;</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>White weddiing makeup &amp; hairstyling </span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free construction of customized wig cap</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free Consultation</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free trial session &lpar; can be used as save the date shoot or bridal shower &rpar;</span>
+</li>
+</ul>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/20 flex flex-col gap-4">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-secondary uppercase tracking-widest">PRICE</span>
+<span class="text-2xl font-headline-md text-primary">₵4000<span class="text-xs text-on-surface-variant font-normal"></span></span>
+</div>
+<button class="w-full border border-primary text-primary py-3 font-label-sm uppercase tracking-[0.2em] rounded-sm hover:bg-primary-container hover:text-on-primary-container transition-all">Enquire Now</button>
+</div>
+</div>
+<!-- Package Card 5 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-center bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 relative group overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-6xl" data-icon="group">group</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">BGH EXTRAORDINAIRE BRIDE</h4>
+<p class="font-body-md text-on-surface-variant mb-6 italic">A coordinated, sophisticated glam session for your favorite people.</p>
+<div class="flex-grow">
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Engagement makeup &amp; hairstyling  </span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>White weddiing makeup &amp; hairstyling </span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free construction of customized wig cap</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free Consultation</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free trial session &lpar; can be used as save the date shoot or bridal shower &rpar;</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Thanksgiving makeup </span>
+</li>
+</ul>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/20 flex flex-col gap-4">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-secondary uppercase tracking-widest">PRICE</span>
+<span class="text-2xl font-headline-md text-primary">₵5000<span class="text-xs text-on-surface-variant font-normal"></span></span>
+</div>
+<button class="w-full border border-primary text-primary py-3 font-label-sm uppercase tracking-[0.2em] rounded-sm hover:bg-primary-container hover:text-on-primary-container transition-all">Enquire Now</button>
+</div>
+</div>
+<!-- Package Card 6 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-center bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow duration-300 relative group overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-6xl" data-icon="group">group</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary mb-2">BGH PREMIUM BRIDE</h4>
+<p class="font-body-md text-on-surface-variant mb-6 italic">A coordinated, sophisticated glam session for your favorite people.</p>
+<div class="flex-grow">
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Engagement makeup &amp; hairstyling  </span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>White weddiing makeup &amp; hairstyling </span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free construction of customized wig cap</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Thanksgiving makeup &amp; hairstyling </span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Court wedding makeup &amp; hairstyling </span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Thanksgiving makeup </span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free Consultation</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Free trial session &lpar; can be used as save the date shoot or bridal shower &rpar;</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+<span>Freebies &lpar; gift for the bride &rpar; </span>
+</li>
+</ul>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/20 flex flex-col gap-4">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-secondary uppercase tracking-widest">PRICE</span>
+<span class="text-2xl font-headline-md text-primary">₵6000<span class="text-xs text-on-surface-variant font-normal"></span></span>
+</div>
+<button class="w-full border border-primary text-primary py-3 font-label-sm uppercase tracking-[0.2em] rounded-sm hover:bg-primary-container hover:text-on-primary-container transition-all">Enquire Now</button>
 </div>
 </div>
 </div>
-<button class="mt-stack-md bg-primary text-on-primary px-10 py-4 font-label-sm uppercase tracking-[0.2em] rounded-sm hover:brightness-110 shadow-lg transition-all">Enquire for Packages</button>
+<!-- Right Arrow -->
+<button class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-surface/80 backdrop-blur-sm p-2 rounded-full border border-primary/20 text-primary hidden md:flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all shadow-md mr-4 active:scale-95" onclick="document.getElementById('bridal-carousel').scrollBy({left: 400, behavior: 'smooth'})">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
 </div>
-<div class="order-1 md:order-2 relative">
-<div class="absolute -top-4 -left-4 w-32 h-32 bg-secondary-container/50 rounded-full blur-3xl"></div>
-<img alt="Bridal Details" class="rounded-2xl shadow-xl w-full object-cover aspect-square" data-alt="Exquisite wedding details, lace fabric and delicate jewelry on a silk cloth with soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpvdLQcAsv038DqGZriGUI7Db7ZwiK3EMpwVBWic-CuNUpzN1uxejlGNJaRtCjp-87muZLZD8cXbtvZkQOk-Ff0MmWzn5HLsKENwJp4qlwViA5nO6baNLtsT7es6Zkv_w_qPgK7nsMgwlGWPBoHTNuC1SgnZm8MX-HNRFc-M6G3beETHC7ZNFOzgs_CnuqHJCsVCOwAmqZrGEJr2hVTobYTBBBz_f0NJ1DDCsKXl-sWrxYhaEJivIn4XBQe5MOGxWkN_h-Ini0MYc"/>
-<div class="absolute -bottom-6 -right-6 p-6 glass-card rounded-xl">
-<span class="text-3xl font-headline-xl text-primary leading-none italic">15%</span>
-<p class="text-[10px] uppercase tracking-widest font-manrope text-on-surface font-bold">Bundle Discount</p>
+
+<!-- Pagination Dots (Mobile) -->
+<div class="flex justify-center gap-2 mt-6 md:hidden">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-primary/20"></div>
+<div class="w-2 h-2 rounded-full bg-primary/20"></div>
 </div>
-</div>
+<div class="mt-12 text-center">
+<p class="text-sm font-manrope text-on-surface-variant mb-4">Planning a destination wedding or have a large party?</p>
+<button class="text-primary font-label-sm uppercase tracking-widest border-b border-primary/30 hover:border-primary transition-all pb-1">Request a Custom Quote</button>
 </div>
 </section>
-4. Home/Outdoor Services -->
+<!-- 4. Home/Outdoor Services -->
 <section class="mb-stack-lg border border-primary/20 p-stack-lg rounded-3xl text-center relative overflow-hidden">
 <div class="absolute inset-0 opacity-5 pointer-events-none">
 <span class="material-symbols-outlined text-[300px]" data-icon="house">house</span>
@@ -323,4 +567,16 @@
 <span class="text-[10px] font-manrope font-medium uppercase tracking-tighter">Academy</span>
 </a>
 </nav>
+<script>
+    const carousel = document.getElementById('bridal-carousel');
+    const dots = document.querySelectorAll('#bridal-suite .w-2.h-2');
+    
+    carousel.addEventListener('scroll', () => {
+        const index = Math.round(carousel.scrollLeft / carousel.offsetWidth);
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('bg-primary', i === index);
+            dot.classList.toggle('bg-primary/20', i !== index);
+        });
+    });
+</script>
 </body></html>
