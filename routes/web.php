@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'home')->name('home');
-Route::view('/services','services')->name('services');
+Route::view('/', 'pages.home')->name('home');
+Route::view('/services','pages.services')->name('services');
 Route::view('/terms&policies', 'terms&polices') ->name ('terms&policies');
 
 Route::middleware(['auth', 'verified'])->group(function () {
